@@ -1,0 +1,6 @@
+- difference between
+    - Methods
+    - Functions
+- Which C++ we are using
+- Add Quizes
+- Chapter 1 bank atm system , amount in , rupee note out in quatity e.g 500 x4 , 100 x2 = 2200
