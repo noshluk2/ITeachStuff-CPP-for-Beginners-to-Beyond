@@ -12,11 +12,11 @@
 
 #include <iostream>
 using namespace std;
-class age_class {  
+class age_class {   // using class keyword
   //public things can be accessed by object
   public:           
-    age_class() {  // one constructor is a must    
-      cout << "\nSimple constructor\n";
+    age_class(int age_class_varible =20) {  // one constructor is a must    
+      cout << "\nDefault constructor setting private varibles\n";
         }
     void age_set(int new_age){
       age_class_varible=new_age;
