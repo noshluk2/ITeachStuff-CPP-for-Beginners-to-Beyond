@@ -1,14 +1,11 @@
 #include "order.h"
 
-order::order(){
+
+int order::get_selection(){
+    return order::selection;
 
 }
+void order::set_selection(int select){
+     order::selection=select;
 
-int order::get_order_array(){
-    return order::order_array[];
 }
-
-void order::set_order_array(int array[]){
-     order::order_array = array;
-}
-

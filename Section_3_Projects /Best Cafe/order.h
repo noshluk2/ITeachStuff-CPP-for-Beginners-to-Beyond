@@ -1,15 +1,12 @@
 #pragma once
 
+#include<iostream>
 class order{
 public:
-    order();
-    int get_order_array();
-    void set_order_array(int array[]);
+    int get_selection();
+    void set_selection(int select);
 
 private:
-    int order_id;
-    bool first_selection;
-    bool second_selection;
-    int order_array[];
-    
+int selection=0;
+
 };

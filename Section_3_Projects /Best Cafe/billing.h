@@ -2,11 +2,11 @@
 
 class billing{
 public:
-    void print_bill(int array[]);
-
+    billing(int select);
+    int get_total_cost();
 
 private:
-    int total_cost;
+    int total_cost=0;;
 
     
 };

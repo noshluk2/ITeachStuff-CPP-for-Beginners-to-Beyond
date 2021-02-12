@@ -1,15 +1,13 @@
 #include "welcome.h"
 #include "seating.h"
-#include "food.h"
 #include "order.h"
 #include<iostream>
-int number_of_people,food_from_menu_1,food_from_menu_2;
+int number_of_people;int selected=0;
 std::string menu_array[]={"Fried Egg with paratha","halwa Puri","Biryani","Chicken Qorma",
     "Dumnba karahi","Beef Karahi ","Club Sandwich","chicken Patie"};
-
+int price[]={200,300,100,200,400,500,654,343};
 int main(){
-    welcome customer_enter;
-    welcome enter(enter.get_time());
+    welcome customer_enter(customer_enter.get_time());
     std::cout<<"\nHow many people Sir ?\n"<<std::endl;
     std::cin>>number_of_people;
     seating customer(number_of_people);
@@ -20,11 +18,18 @@ int main(){
         std::cout<<"Have a Seat there "<<std::endl;
     }
 
-    food menu;
-    for(int i =1;i<11;i++){
-        std::cout<<i<<" - "<<menu_array[i]<<std::endl;
-    }
-    std::cout<<"Kindly wait for the food to be served "<<std::endl;
+    order menu;
+    for(int i =0;i<8;i++){
+        std::cout<<i+1<<" - "<<menu_array[i]<<std::endl;
+    }std::cout<<"Your Selection : ";
+    std::cin>>selected;
+    menu.set_selection(selected);
+
+
+    std::cout<<"\n\nKindly wait for the food to be served "<<std::endl;
+    std::cout<<"\n\n\n------Assuming food is finished-------- \n\n\n"<<std::endl;
+    std::cout<<"You Bougth : "<<menu_array[selected]<< " = "<<price[selected]<<"rupees"<<std::endl;
+    
     
 
 

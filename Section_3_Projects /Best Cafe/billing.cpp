@@ -2,10 +2,10 @@
 
 #include<iostream>
 
-
-
-
-void billing::print_bill(int array[]){
-     std::cout<<""<<std::endl;
+billing::billing(int select){
+     billing::total_cost=select;
 }
 
+int get_total_cost(){
+     return billing::total_cost;
+}
