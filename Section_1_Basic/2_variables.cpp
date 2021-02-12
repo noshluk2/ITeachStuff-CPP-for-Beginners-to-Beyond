@@ -26,11 +26,21 @@ int main(){
     char    character='!';
     //byte,library(string)
     
-    printf("Do you have a Pen ?  \nKindly Write two numbers %d ,%f \nDone%c ",
-    a_integer,a_float,character);
+    printf("Do you have a Pen ?  \nKindly Write two numbers %d ,%f \nDone%c ", a_integer,a_float,character);
     const int abc=0;
     //a=1;
     //-------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -51,6 +61,17 @@ int main(){
 
 
 
+
+
+
+
+
+
+    
+
+
+
+
     //3 - different ways for initialization
 
     //-------------------------------------------------------------------------
@@ -58,7 +79,7 @@ int main(){
     // always give usefull names not like a,b,c
     int a_variable_ = 10;
     int a_variable__ = { 10 };
-    int a_variable___{ 10 }; // book followed
+    int a_variable___{ 10 }; // books followed
     int a_variable____(10);
 
     int empty_array[5]{};  // 5 integer elements in array currently all 0

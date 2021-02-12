@@ -34,6 +34,9 @@ int main() {
 
 
 
+
+
+
     //Examplery usage 
     //-------------------------------------------------------------------------
     std::string names[]={"Ali","Ahmed","Luqman","Usman","AbuBakar"};
@@ -41,6 +44,9 @@ int main() {
     for(int index=0;index <5 ;index ++ ){
         std::cout<<names[index]<<" obtained "<<marks[index]<<" marks"<<std::endl;
     }
+
+
+
 
 
 

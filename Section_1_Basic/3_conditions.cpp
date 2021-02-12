@@ -31,6 +31,11 @@ int main(){
 
 
 
+
+
+
+
+
         //2 - If else if, elseif, else ,else
     //-------------------------------------------------------------------------
     // to take input from vscode you need to do a change in settings
@@ -49,6 +54,16 @@ int main(){
     //else{
      //   cout << "Can not say anything about your age"<<endl;
     //} input 50 gives and error  and wrong inputs
+
+    
+
+
+
+
+
+
+
+
 
     
     //3 - Switch Statment

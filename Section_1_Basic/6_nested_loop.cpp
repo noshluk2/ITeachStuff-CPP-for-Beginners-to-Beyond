@@ -13,13 +13,20 @@ using namespace std;
 int main(){
         //1 - Loop within Loop
 //-------------------------------------------------------------------------
-//     int variable=0;
-//     for(int i;i<10;i++){
-//         for(int k=0;k<10;k++){
-//                 variable++;
-//                 cout<<variable<<endl;
-//         }
-//     }
+    int variable=0;
+    for(int i;i<10;i++){
+        for(int k=0;k<10;k++){
+                variable++;
+                cout<<variable<<endl;
+        }
+    }
+
+
+
+
+
+
+
 
     //1 - Using loops to make a star
 //-------------------------------------------------------------------------
