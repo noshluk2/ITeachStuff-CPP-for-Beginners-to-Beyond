@@ -1,12 +1,11 @@
 #pragma once
-
+#include<iostream>
 class food{
 public:
-    food();
-    food(int selection);
-
+    int get_selection();
+    void food::set_selection(int select);
 
 private:
-int first_selection;
-int second_selection;
+int selection=0;
+
 };

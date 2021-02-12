@@ -4,23 +4,27 @@
 
 
 welcome::welcome(){
-    std::cout<<"Welcome to the : \n"<<std::endl;
-    std::cout<<"      /     /\      ------  -------               "<<std::endl;
-    std::cout<<"     /     /  \     |       |        "<<std::endl;
-    std::cout<<"    /     /----\    |----   -------           "<<std::endl;
-    std::cout<<"    \    /      \   |       |        "<<std::endl;
-    std::cout<<"     \  /        \  |       -------     \n"<<std::endl;
+    std::cout<<"\nWelcome to the : \n"<<std::endl;
+    std::cout<<" ________________________________"<<std::endl;
+    std::cout<<"|  *      *      ------  ------- |"<<std::endl;
+    std::cout<<"| *      * *     |       |       | "<<std::endl;
+    std::cout<<"|*      *---*    |----   ------- |"<<std::endl;
+    std::cout<<"| *    *     *   |       |       |"<<std::endl;
+    std::cout<<"|  *  *       *  |       ------- |"<<std::endl;
+    std::cout<<"|________________________________|\n\n"<<std::endl;
+    
 
 }
 void welcome::set_time(){
     // setting entering time in hours while customers enter the cafe
-    time_t t = time(NULL);
-    struct tm *tmp = gmtime(&t);
-    entering_time=tmp->tm_hour;
+    entering_time=13; // just for understanding hardcoding 
 
 }
 int welcome::get_time(){
     //returns the private varibles
+    time_t t = time(NULL);
+    struct tm *tmp = gmtime(&t);
+    entering_time=tmp->tm_hour;
     return welcome::entering_time;
 }
 welcome::welcome(int current_hours){
